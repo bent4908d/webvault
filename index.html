@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrivateBin - Offline Importer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="VaultManager.js"></script>
+    <script src="baseX.js"></script>
+    <script src="zlib.min.js"></script>
+    <script src="crypttool.js"></script>
+</head>
+<body onload="VaultInit()">
+    <div class="topbar">
+    </div>
+    <div class="importPanel">
+        <h2>IMPORT PASTE</h2>
+        <form>
+            <div class="loadingIcon"></div>
+            <div class="user-box">
+                <input type="text" id="textBoxID" required>
+                <label>Paste ID</label>
+            </div>
+            <div class="user-box">
+                <input type="text" id="textBoxPass" required>
+                <label>Decryption Code</label>
+            </div>
+
+            <a onclick="onBtnImportClick()">IMPORT</a>
+
+        </form>
+    </div>
+</body>
+</html>

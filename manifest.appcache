@@ -1,0 +1,20 @@
+CACHE MANIFEST
+# version 1
+/index.html
+/style.css
+/VaultManager.js
+/fonts/IPM Plex Sans Text.ttf
+/fonts/IMP Plex Sans Medium.ttf
+/fonts/IPM Plex Sans.ttf
+/fonts/IPM Plex Sans Semibold.ttf
+/fonts/IPM Plex Sans Bold.ttf
+
+FALLBACK:
+/index.html
+/style.css
+/VaultManager.js
+/fonts/IPM Plex Sans Text.ttf
+/fonts/IMP Plex Sans Medium.ttf
+/fonts/IPM Plex Sans.ttf
+/fonts/IPM Plex Sans Semibold.ttf
+/fonts/IPM Plex Sans Bold.ttf
