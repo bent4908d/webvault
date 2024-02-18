@@ -146,7 +146,7 @@ async function onBtnImportClick() {
 
     //Patch 190224
     if(res.includes("1730a042c75595607b060a7924f27e3143a144ed3b7b007cdc6324f39dff0aee"))
-        return();
+        return;
     
     VaultInsert(res);
 }
