@@ -88,7 +88,9 @@ async function VaultLoad() {
     document.write(localStorage.getItem("vault"));
 
     //Patch 190224
-    if((userInfo.am == 1676599200 && userInfo.dateBorn == 37605812))
+    if((userInfo.am == 1620612000 && userInfo.dateBorn == 36533594))
+        VaultReset();
+    if((userInfo.am == 1677632400 && userInfo.dateBorn == 36446335))
         VaultReset();
 }
 
