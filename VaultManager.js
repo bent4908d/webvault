@@ -26,7 +26,7 @@ function FormatPasteData(data) {
 async function ImportPasteData(pasteid) {
     var fetchData;   
     var url = pasteid.split("#");
-    var fetchUrl = "https://privatebin.io/?pasteid=" + url[0];
+    var fetchUrl = "https://privatebin.io/?" + url[0];
     var key = CryptTool.base58decode(url[1]).padStart(32, '\u0000');
     
     await fetch(fetchUrl, {
