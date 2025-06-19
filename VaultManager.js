@@ -25,8 +25,8 @@ function FormatPasteData(data) {
 // PrivateBin Paste Importer
 async function ImportPasteData(pasteid) {
     var fetchData;   
-    var url = pasteid.split("#");
-    var fetchUrl = "https://privatebin.io/?" + url[0];
+    var url = pasteid.split("#"); // URL SPLIT OBSOLETE(og pb). PrivateBin.io Porting Patch 
+    var fetchUrl = "https://privatebin.io/?" + pasteid;
     var key = CryptTool.base58decode(url[1]).padStart(32, '\u0000');
     
     await fetch(fetchUrl, {
