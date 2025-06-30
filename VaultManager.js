@@ -39,7 +39,7 @@ async function ImportPasteData(pasteid) {
     .then(res => res.json())
     .then(data => { fetchData = data });
 
-    if(fetchData == "Invalid paste ID.")
+    if(fetchData.message == "Invalid paste ID.")
     {
         alert("ERROR");
         location.reload();
