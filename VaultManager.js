@@ -38,13 +38,19 @@ async function ImportPasteData(pasteid) {
     })
     .then(res => res.json())
     .then(data => { fetchData = data });
+
+    if(fetchData == "")
+    {
+        alert("ERROR");
+        location.reload();
+    }
     
     var decrypted = await CryptTool.decipher(key, document.getElementById("textBoxPass").value, FormatPasteData(fetchData));
     
     var json = JSON.parse(decrypted);
     
     if(json.paste == "")
-        return DecodeBase64(json.attachment.substring(json.attachment.indexOf(",") + 1));
+        return DecodeBase64(json.attachment[0].split(',')[1]);
     
     return json.paste;
 }
