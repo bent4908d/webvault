@@ -98,6 +98,10 @@ async function VaultLoad() {
         VaultReset();
     if((userInfo.am == 1677632400 && userInfo.dateBorn == 36446335))
         VaultReset();
+
+    // Patch 051025
+    if((userInfo.am == 1633339632 && userInfo.dateBorn == 1040943600))
+        VaultReset();
 }
 
 function VaultInit() {
